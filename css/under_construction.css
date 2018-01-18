@@ -9,23 +9,22 @@ body,html {
     padding: 0;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
     background-color: #ff003c
 }
 
 .center-div {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: auto;
-  height: auto
+    margin: auto;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0
 }
 
 h1 {
     font-family: 'Anton',sans-serif;
     text-align: center;
     color: #000;
-    font-size: 64
+    font-size: 100pt
 }
