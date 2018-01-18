@@ -1,0 +1,86 @@
+.nav {
+    transition: all .5s,width 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    padding: 1.5% 0;
+    background-color: #000;
+    position: fixed;
+    top: 0
+}
+
+.nav.space-around {
+    justify-content: space-around
+}
+
+.nav.space-between {
+    justify-content: space-between
+}
+
+.nav>a {
+    transition: .25s;
+    font-family: 'Anton',sans-serif;
+    text-align: center;
+    color: #fff; 
+    margin: auto;
+    padding: .5%;
+    text-decoration: none;
+    font-size: 16pt
+}
+
+.nav>a:first-child {
+    color: #ff003c;
+    background-color: #000;
+    border: 2px solid #ff003c;
+    margin-left: 5%
+}
+
+.nav .button:hover {
+    transition: .25s;
+    color: #000;
+    background-color: #ff003c
+}
+
+.nav i,.nav i:hover {
+    transition: .25s;
+    color: #fff
+}
+
+.nav i:hover {
+    color: #ff003c
+}
+
+.nav .divider {
+    border-right: 1px solid gray
+}
+
+.nav .email,.nav .icon {
+    font-family: 'Material Icons';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.5;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga'
+}
+
+.nav .icon {
+    line-height: 1
+}
+
+.nav .hide,.nav .icon {
+    display: none
+}
+
+.hide,.icon {
+    background-color: #000
+}

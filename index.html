@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="black" />
+        <meta name="msapplication-navbutton-color" content="black">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/master.css">
+        <link rel="stylesheet" type="text/css" href="css/content.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/master.js"></script>
+    </head>
+    <body>
+        <a id="home"> </a>
+        <div class="nav" id="mNav">
+            <a href="#home" id="mHome" class="button">CW</a>
+            <div class="divider"></div>
+            <a href="#resume" class="button">RÉSUMÉ</a>
+            <a href="#projects" class="button">PROJECTS</a>
+            <a href="#code" class="button">CODE</a>
+            <a href="#models" class="button">MODELS</a>
+            <a href="#contact" class="button">CONTACT</a>
+            <a href="mailto:chase.weaver34@gmail.com" target="_blank">
+                <i class="email">email</i>
+            </a>
+            <a href="javascript:void(0);" class="hide">
+                <i id="mIcon" class="icon">expand_more</i>
+            </a>
+        </div>
+
+        <div class="space"></div>
+        <div class="space"></div>
+
+        <div class="home-container"></div>
+
+        <div class="space" id="resume"></div>
+        <div class="seperator"> <h1>RÉSUMÉ</h1></div>
+        <div class="resume-container">
+            <div id="edu-list" class="expandable-list">
+                <hr class="hidden">
+                <div class="title">A lot of stuff</div>
+                <a id="arrow" href="javascript:void(0);" onclick="expand('edu-list', this);">
+                    <i id="arrow-icon" class="material-icons">expand_more</i>
+                </a>
+                <div class="description">
+                    <h1>STUFF</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="space" id="projects"></div>
+        <div style="background-image: url(images/projects.jpg);" class="seperator"><h1>PROJECTS</h1></div>
+
+        <div class="space" id="code"></div>
+        <div style="background-image: url(images/code.jpg);" class="seperator"><h1>CODE</h1></div>
+
+        <div class="space" id="models"></div>
+        <div class="seperator"><h1>MODELS</h1></div>
+
+        <div class="space" id="contact"></div>
+        <div class="seperator"><h1>CONTACT</h1></div>
+
+    </body>
+</html>
