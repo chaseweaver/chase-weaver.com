@@ -22,11 +22,16 @@ const quotes = [
 /* Randomizes accent color on page load */
 this.window.onload = function() {
   const quote = quotes[Math.floor(Math.random() * quotes.length)];
+  const fadein = this.document.getElementById('fade-in');
   const q1 = this.document.getElementById('quote-block-1');
   const q2 = this.document.getElementById('quote-block-2');
 
   q1.innerHTML = quote[0]; // Quote
   q2.innerHTML = quote[1]; // Author
+
+  // Remove loading fade
+  fadein.style.background = '#0000';
+  setTimeout(function(){ fadein.style.setProperty('display', 'none'); }, 1000);
 
   this.document.documentElement.style.setProperty('--accent-color', getRandomColor());
 };
