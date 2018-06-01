@@ -1,90 +1,104 @@
-.home-container {
-    transition: .5s;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly
+body,
+html {
+  color: #000;
+  background-color: #fff
 }
 
-.home-left-div,.home-right-div {
-    display: inline-block;
-    width: 40%
+.home-container {
+  background-color: var(--accent-color);
+}
+
+.home-container {
+  transition: .5s;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10% 0 0 0;
+  justify-content: space-evenly
+}
+
+.home-left-div,
+.home-right-div {
+  display: inline-block;
+  width: 55%
 }
 
 .home-right-div {
-    width: 60%;
-    margin: auto
+  width: 45%;
+  margin: auto;
+  width: 45%;
+  background-image: url('../images/lines.png')
 }
 
 .home-left-div>img {
-    transition: .5s;
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: auto
+  transition: .5s;
+  width: 40%;
+  height: auto;
+  display: block;
+  margin: auto
 }
 
 .home-right-div>h2 {
-    color: #fff;
-    font-weight: 400;
-    font-size: 22pt
+  color: #fff;
+  font-weight: 400;
+  font-size: 22pt
 }
 
 .resume-container {
-    width: 90%;
-    height: auto;
-    display: block;
-    margin: auto;
-    background: lightblue
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: auto;
+  background: lightblue
 }
 
 .resume-container hr {
-    width: 100%;
-    height: 2px
+  width: 100%;
+  height: 2px
 }
 
 .resume-container .hidden {
-    display: none
+  display: none
 }
 
 .expandable-list {
-    width: 100%;
-    margin: auto;
-    height: auto
+  width: 100%;
+  margin: auto;
+  height: auto
 }
 
 .title {
-    font-size: 26pt;
-    color: #363636;
-    width: auto
+  font-size: 26pt;
+  color: #363636;
+  width: auto
 }
 
 .expandable-list i {
-    color: #363636;
-    font-size: 32pt;
-    width: auto;
-    float: right
+  color: #363636;
+  font-size: 32pt;
+  width: auto;
+  float: right
 }
 
 .expandable-list .description {
-    width: 100%;
-    height: auto
+  width: 100%;
+  height: auto
 }
 
 .seperator {
-    width: 100vw;
-    height: auto;
-    margin: auto;
-    background-size: cover;
-    background-color: #000
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  background-size: cover;
+  background-color: #000
 }
 
 .seperator>h1 {
-    font-family: 'Anton',sans-serif;
-    font-weight: 300;
-    margin-left: 5%;
-    padding: 30px 0;
-    letter-spacing: 6px;
-    color: #fff;
-    font-size: 72pt;
-    overflow: auto
+  font-family: 'Anton', sans-serif;
+  font-weight: 300;
+  margin-left: 5%;
+  padding: 30px 0;
+  letter-spacing: 6px;
+  color: #fff;
+  font-size: 72pt;
+  overflow: auto
 }
