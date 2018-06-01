@@ -11,7 +11,6 @@ html {
 .home-container {
   transition: .5s;
   display: flex;
-  flex-wrap: wrap;
   padding: 10% 0 0 0;
   justify-content: space-evenly
 }
@@ -25,7 +24,28 @@ html {
 .home-right-div {
   width: 45%;
   margin: auto;
-  width: 45%;
+  padding: 5% 0; 
+  background: repeating-linear-gradient(
+  45deg,
+  #000,
+  #000 10px,
+  #0000 10px,
+  #0000 20px
+  );
+  background-attachment: fixed
+}
+
+.home-right-div-text {
+  width: auto;
+  margin: -5% 0 -5% -5%;
+  padding: 5%;
+  background: #000
+}
+
+.home-right-div-text>h2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 22pt;
 }
 
 .home-left-div>img {
@@ -34,12 +54,6 @@ html {
   height: auto;
   display: block;
   margin: auto
-}
-
-.home-right-div>h2 {
-  color: #000;
-  font-weight: 400;
-  font-size: 22pt
 }
 
 .resume-container {

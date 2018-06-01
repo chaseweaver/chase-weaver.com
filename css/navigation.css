@@ -12,12 +12,12 @@
   padding: 1.5% 0;
   position: fixed;
   top: 0;
-  background-color: #00000000
+  background-color: #0000
 }
 
 .nav.solid {
   background-color: #000;
-  padding: .5% 0;
+  padding: .5% 0
 }
 
 .nav.solid>a {
@@ -46,7 +46,8 @@
 .nav>a:first-child {
   color: var(--accent-color);
   border: 2px solid var(--accent-color);
-  background-color: #000
+  background-color: #000;
+  margin-left: 5%
 }
 
 .nav .divider {
@@ -56,15 +57,16 @@
 
 .nav .holder {
   display: flex;
-  text-align: center;
+  text-align: right;
   margin: auto auto auto 0;
-  max-width: 25%
+  
 }
 
 .nav img {
   transition: all 0.5s;
   width: 20%;
-  filter: brightness(0)
+  filter: brightness(0);
+  padding: 4%
 }
 
 .nav.solid img {

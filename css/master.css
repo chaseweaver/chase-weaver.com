@@ -1,6 +1,17 @@
+:root {
+  --accent-color: #fff;
+}
+
 ::-webkit-scrollbar {
   width: 0;
   background: 0 0
+}
+
+::selection {
+  background: var(--accent-color)
+}
+::-moz-selection {
+  background: var(--accent-color)
 }
 
 body,
