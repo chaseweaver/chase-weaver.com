@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Home</title>
   <meta charset='UTF-8'>
@@ -13,7 +12,6 @@
   <link href='https://fonts.googleapis.com/css?family=Material+Icons' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
 
-  <link rel='stylesheet' type='text/css' href='css/colors.css'>
   <link rel='stylesheet' type='text/css' href='css/master.css'>
   <link rel='stylesheet' type='text/css' href='css/content.css'>
   <link rel='stylesheet' type='text/css' href='css/navigation.css'>
@@ -32,12 +30,17 @@
     <a href='#code' class='button'>CODE</a>
     <a href='#models' class='button'>MODELS</a>
     <a href='#contact' class='button'>CONTACT</a>
-    <a href='mailto:chase.weaver34@gmail.com' target='_blank'>
-      <i class='email'>email</i>
-    </a>
-    <a href='javascript:void(0);' class='hide'>
-      <i id='icon' class='icon'>expand_more</i>
-    </a>
+
+    <div id='holder' class='holder'>
+      <a href='mailto:chase.weaver34@gmail.com' target='_blank'>
+        <img src='images/mail.png'>
+      </a>
+      <a href='https://github.com/chaseweaver'target='_blank'>
+        <img src='images/github.png'>
+      </a>
+    </div>
+
+    
   </div>
 
   <div class='home-container'>
@@ -51,19 +54,18 @@
     </div>
   </div>
 
-  <div class='seperator' class='space' id='resume'>
+  <div class='space' style='margin-top: -100px' id='resume'></div>
+  <div class='seperator'>
     <h1>RÉSUMÉ</h1>
-  </div>
-  <div class='resume-container'>
   </div>
 
   <div class='space' id='projects'></div>
-  <div style='background-image: url(images/projects.jpg);' class='seperator'>
+  <div class='seperator'>
     <h1>PROJECTS</h1>
   </div>
 
   <div class='space' id='code'></div>
-  <div style='background-image: url(images/code.jpg);' class='seperator'>
+  <div class='seperator'>
     <h1>CODE</h1>
   </div>
 
@@ -78,5 +80,4 @@
   </div>
 
 </body>
-
 </html>

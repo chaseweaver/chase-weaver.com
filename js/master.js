@@ -27,14 +27,3 @@ function avatarOnMouseOver(element) {
 function avatarOnMouseOut(element) {
   element.setAttribute('src', 'images/avatar.png');
 }
-
-/*
-let parent = $('icon');
-parent.animate({'margin-right' : '-=5px', 'margin-left' : '+=5px'}, 200,
-  function() {
-    parent.animate( {'margin-right' : '+=10px', 'margin-left' : '-=10px'}, 100,
-      function() {
-        parent.animate({'margin-right' : '-=5px', 'margin-left' : '+=5px'}, 200)
-      })
-})
-*/
