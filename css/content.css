@@ -11,19 +11,21 @@ html {
 .home-container {
   transition: .5s;
   display: flex;
-  padding: 10% 0 0 0;
+  flex-wrap: wrap;
+  padding-top: 10%;
   justify-content: space-evenly
 }
 
 .home-left-div,
 .home-right-div {
-  display: inline-block;
+  position:relative;
+  padding-top: 25%;
   width: 55%
 }
 
 .home-right-div {
   width: 45%;
-  margin: auto;
+  margin: auto auto 2.5% auto;
   padding: 5% 0; 
   background: repeating-linear-gradient(
   45deg,
@@ -51,26 +53,9 @@ html {
 .home-left-div>img {
   transition: .5s;
   width: 40%;
-  height: auto;
-  display: block;
-  margin: auto
-}
-
-.resume-container {
-  width: 90%;
-  height: auto;
-  display: block;
-  margin: auto;
-  background: lightblue
-}
-
-.resume-container hr {
-  width: 100%;
-  height: 2px
-}
-
-.resume-container .hidden {
-  display: none
+  position: absolute;
+  transform: translateX(50%);
+  bottom: -1px;
 }
 
 .expandable-list {
