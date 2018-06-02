@@ -1,8 +1,8 @@
-.home-container {
+.contact-container {
   background-color: var(--accent-color);
 }
 
-.home-container {
+.contact-container {
   transition: .5s;
   height: 100%;
   display: flex;
@@ -10,14 +10,14 @@
   justify-content: space-evenly
 }
 
-.home-left-div,
-.home-right-div {
+.contact-left-div,
+.contact-right-div {
   position: relative;
   padding-top: 25%;
   width: 55%
 }
 
-.home-right-div {
+.contact-left-div {
   width: 45%;
   margin: auto auto 2.5% auto;
   padding: 5% 0; 
@@ -31,23 +31,43 @@
   background-attachment: fixed
 }
 
-.home-right-div-text {
+.contact-right-div>h2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 28pt
+}
+
+.contact-left-div-text {
   width: auto;
-  margin: -5% 0 -5% -5%;
+  margin: -5% -5% -5% 0;
   padding: 5%;
   background: #000
 }
 
-.home-right-div-text>h2 {
+.icon-title-container>h2 {
+  font-family: 'Roboto Mono', monospace;
   color: #fff;
   font-weight: 400;
   font-size: 22pt
 }
 
-.home-left-div>img {
+.contact-right-div>img {
   transition: .5s;
   width: 50%;
   position: absolute;
   transform: translateX(50%);
   bottom: 0px
+}
+
+.icon-title-container {
+  display: flex;
+  width: 100%;
+  float: left;
+  background: red
+}
+
+.icon-title-container>img {
+  width: 5%;
+  height: 5%;
+  text-align: center
 }

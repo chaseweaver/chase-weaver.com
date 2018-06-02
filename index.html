@@ -1,84 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Home</title>
-  <meta charset='UTF-8'>
-  <meta name='theme-color' content='black' />
-  <meta name='msapplication-navbutton-color' content='black'>
-  <meta name='apple-mobile-web-app-capable' content='yes'>
-  <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+  <head>
+    <title>Home</title>
+    <meta charset='UTF-8'>
+    <meta name='theme-color' content='black' />
+    <meta name='msapplication-navbutton-color' content='black'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
 
-  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
 
-  <link rel='stylesheet' type='text/css' href='css/master.css'>
-  <link rel='stylesheet' type='text/css' href='css/home.css'>
-  <link rel='stylesheet' type='text/css' href='css/header.css'>
+    <link rel='stylesheet' type='text/css' href='css/master.css'>
+    <link rel='stylesheet' type='text/css' href='css/header.css'>
+    <link rel='stylesheet' type='text/css' href='css/home.css'>
 
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script src='js/master.js'></script>
-</head>
-
-<body>
-  <div class='fade-in' id='fade-in'></div>
-  <a id='top'> </a>
-  <div class='nav' id='nav'>
-    <a href='#top' id='home' class='button'>CW</a>
-    <div id='divider' class='divider'></div>
-    <a href='#resume' class='button'>RÉSUMÉ</a>
-    <a href='#projects' class='button'>PROJECTS</a>
-    <a href='#code' class='button'>CODE</a>
-    <a href='#models' class='button'>MODELS</a>
-    <a href='#contact' class='button'>CONTACT</a>
-
-    <div id='holder' class='holder'>
-      <a href='mailto:chase.weaver34@gmail.com' target='_blank'>
-        <img src='images/mail.png'>
-      </a>
-      <a href='https://github.com/chaseweaver'target='_blank'>
-        <img src='images/github.png'>
-      </a>
-    </div>
-
-    
-  </div>
-
-  <div class='home-container'>
-    <div class='home-left-div'>
-      <img id='avatar' src='images/avatar.png' onmouseover='avatarOnMouseOver(this);' onmouseout='avatarOnMouseOut(this);' alt='Chase'>
-    </div>
-    <div class='home-right-div'>
-      <div class='home-right-div-text'>
-        <h2 id='quote-block-1'>"I have no idea what I am doing."</h2>
-        <h2 id='quote-block-2' style='text-align: right'>- Me</h2>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='js/master.js'></script>
+    <script src='js/header.js'></script>
+    <script src='js/home.js'></script>
+  </head>
+  <body>
+    <div class='fade-in' id='fade-in'></div>
+    <div id='header-placeholder'></div>
+    <div class='home-container'>
+      <div class='home-left-div'>
+        <img id='avatar' src='images/chase.svg'
+          onmouseover='avatarOnMouseOver(this);'
+          onmouseout='avatarOnMouseOut(this);'
+          alt='Chase'>
+      </div>
+      <div class='home-right-div'>
+        <div class='home-right-div-text'>
+          <h2 id='quote-block-1'>I have no idea what I am doing.</h2>
+          <h2 id='quote-block-2' style='text-align: right'>- Me</h2>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class='space' style='margin-top: -100px' id='resume'></div>
-  <div class='seperator'>
-    <h1>RÉSUMÉ</h1>
-  </div>
-
-  <div class='space' id='projects'></div>
-  <div class='seperator'>
-    <h1>PROJECTS</h1>
-  </div>
-
-  <div class='space' id='code'></div>
-  <div class='seperator'>
-    <h1>CODE</h1>
-  </div>
-
-  <div class='space' id='models'></div>
-  <div class='seperator'>
-    <h1>MODELS</h1>
-  </div>
-
-  <div class='space' id='contact'></div>
-  <div class='seperator'>
-    <h1>CONTACT</h1>
-  </div>
-
-</body>
+  </body>
 </html>

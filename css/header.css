@@ -2,7 +2,7 @@
   --accent-color: #fff;
 }
 
-.nav {
+.header {
   transition: all .5s;
   width: 100%;
   height: auto;
@@ -16,70 +16,71 @@
   background-color: #0000
 }
 
-.nav.solid {
+.header.solid {
   background-color: #000;
   padding: .5% 0
 }
 
-.nav.solid>a {
+.header.solid>a {
   color: #fff
 }
 
-.nav.space-around {
+.header.space-around {
   justify-content: space-around
 }
 
-.nav.space-between {
+.header.space-between {
   justify-content: space-between
 }
 
-.nav>a {
+.header>a {
   transition: all 0.5s;
   font-family: 'Anton', sans-serif;
   text-align: center;
   margin: auto;
   padding: .5%;
+  letter-spacing: 1px;
   text-decoration: none;
   font-size: 16pt;
   color: #000
 }
 
-.nav>a:first-child {
+.header>a:first-child {
   color: var(--accent-color);
   border: 2px solid var(--accent-color);
   background-color: #000;
   margin-left: 5%
 }
 
-.nav .divider {
+.header .divider {
   transition: all 0.5s;
   border-right: 2px solid #000
 }
 
-.nav .holder {
+.header .holder {
   display: flex;
   text-align: right;
   margin: auto auto auto 0;
   
 }
 
-.nav img {
+.header img {
   transition: all 0.5s;
   width: 20%;
   filter: brightness(0);
   padding: 4%
 }
 
-.nav.solid img {
+.header.solid img {
   filter: brightness(1)
 }
 
-.nav .button:hover {
+.header .button:hover {
   background-color: #000;
   color: var(--accent-color)
 }
 
-.nav.solid .button:hover {
+.header.solid .button:hover {
   background-color: var(--accent-color);
   color: #000
 } 
