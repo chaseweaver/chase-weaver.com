@@ -53,9 +53,9 @@
 
 .contact-right-div>img {
   transition: .5s;
-  width: 50%;
+  width: 75%;
   position: absolute;
-  transform: translateX(50%);
+  transform: translateX(25%);
   bottom: 0px
 }
 
