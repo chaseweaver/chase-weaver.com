@@ -27,7 +27,11 @@ html {
   width: 25%;
   height: 100%;
   text-align: center;
+<<<<<<< HEAD
   background-color: #000;
+=======
+  background-color: red;
+>>>>>>> dabe483f7571de12221df9b2bc263cb9c088ce34
   padding: 2%;
 }
 
@@ -50,6 +54,10 @@ html {
 .body-container {
   width: 75%;
   height: 100%;
+<<<<<<< HEAD
+=======
+  background-color: blue;
+>>>>>>> dabe483f7571de12221df9b2bc263cb9c088ce34
 }
 
 .fade-in {
