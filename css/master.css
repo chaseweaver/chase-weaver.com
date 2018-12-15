@@ -17,56 +17,46 @@
 body,
 html {
   margin: auto;
-  padding: 0;
   height: 100vh;
   width: 100vw;
   display: flex;
+  background: #0a0c12;
 }
 
 .nav-container {
-  width: 25%;
+  width: 5%;
+  max-width: 50%;
   height: 100%;
-  text-align: center;
-<<<<<<< HEAD
-  background-color: #000;
-=======
   background-color: red;
->>>>>>> dabe483f7571de12221df9b2bc263cb9c088ce34
-  padding: 2%;
-}
-
-.nav-container>img {
-  max-width: 50%;
-  max-width: 50%;
-}
-
-.nav-container>a {
-  font-family: 'Roboto Slab', serif;
-  text-align: center;
   display: flex;
-  flex-direction: column;
-  letter-spacing: 1px;
-  text-decoration: none;
-  font-size: 32pt;
-  color: #fff
+  margin: auto;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  font-family: 'Fira Mono', monospace;
+}
+
+.nav-container>.nav-title
+
+.nav-container>a:first {
+  color: #ff003c;
+}
+
+.nav-container>a{
+  text-align: center;
+  color: #fff;
+  font-size: 28pt;
+  text-align: center;
+}
+
+.regular {
+  font-weight: 400
+}
+
+.bold {
+  font-weight: 900
 }
 
 .body-container {
-  width: 75%;
-  height: 100%;
-<<<<<<< HEAD
-=======
-  background-color: blue;
->>>>>>> dabe483f7571de12221df9b2bc263cb9c088ce34
-}
-
-.fade-in {
-  width: 100%;
-  height: 100%;
-  background: #000;
-  position: fixed;
-  z-index: 2;
-  opacity: 1;
-  -webkit-transition: background 1000ms ease-in-out;
-  transition: background 1000ms ease-in-out
+  width: 95%;
+  background-color: #0f111a;
 }
