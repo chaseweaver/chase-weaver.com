@@ -1,0 +1,64 @@
+:root {
+  --accent-color: #fff
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: 0 0
+}
+
+::selection {
+  background: var(--accent-color)
+}
+::-moz-selection {
+  background: var(--accent-color)
+}
+
+body,
+html {
+  margin: auto;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.nav-container {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  background-color: #000;
+  padding: 2%;
+}
+
+.nav-container>img {
+  max-width: 50%;
+  max-width: 50%;
+}
+
+.nav-container>a {
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 32pt;
+  color: #fff
+}
+
+.body-container {
+  width: 75%;
+  height: 100%;
+}
+
+.fade-in {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  z-index: 2;
+  opacity: 1;
+  -webkit-transition: background 1000ms ease-in-out;
+  transition: background 1000ms ease-in-out
+}
