@@ -8,3 +8,17 @@ $(document).ready(function() {
   $('#content').load('pages/code.html');
   $('#content-style').append('css/code.css');
 });
+
+$('#code').click(function(){
+  $.ajax({url: 'pages/code.html', success: function(result) {
+    $('#content').html(result);
+    $('#content-style').append('css/code.css');
+  }});
+});
+
+$('#projects').click(function(){
+  $.ajax({url: 'pages/projects.html', success: function(result) {
+    $('#content').html(result);
+    $('#content-style').append('css/projects.css');
+  }});
+});
