@@ -1,5 +1,5 @@
 :root {
-  --accent-color: #fff
+  --accent-color: var(--accent-color)
 }
 
 ::-webkit-scrollbar {
@@ -21,7 +21,7 @@ html {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background: var(--accent-color)
+  background: #fefefe
 }
 
 .fade-in {
@@ -31,6 +31,6 @@ html {
   position: fixed;
   z-index: 2;
   opacity: 1;
-  -webkit-transition: background 1000ms ease-in-out;
-  transition: background 1000ms ease-in-out
+  -webkit-transition: background 750ms ease-in-out;
+  transition: background 750ms ease-in-out
 }
