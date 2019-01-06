@@ -7,12 +7,19 @@
     <meta name='msapplication-navbutton-color' content='black'>
     <meta name='apple-mobile-web-app-capable' content='yes'>
     <meta name='apple-mobile-web-app-status-bar-style' content='black'>
-    <link rel='stylesheet' type='text/css' href='css/master.css'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='js/master.js'></script>
+    <script defer src='js/master.js'></script>
+    <link rel='stylesheet' type='text/css' href='css/master.css'>
   </head>
+  <style id='nav-style'></style>
+  <style id='content-style'></style>
   <body>
-    <div class='fade-in' id='fade-in'></div>
-    
+    <span class='fade-in' id='fade-in'></span>
+    <div class='navigation-container'>
+      <span id='navigation'></span>
+    </div>
+    <div class='content-container'>
+      <span id='content'></span>
+    </div>
   </body>
 </html>

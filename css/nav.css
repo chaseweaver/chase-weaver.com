@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+:root {
+  --accent-color: #fff;
+}
+
+.nav {
+  transition: all .5s;
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  padding: 2% 0;
+  background-color: #fefefe
+}
+
+.nav>.logo {
+  background-color: #444;
+  height: 32px;
+}
+
+.nav a {
+  font-size: 10pt;
+  text-decoration: none;
+  float: left;
+  letter-spacing: 1px;
+  padding-left: 0;
+  text-align: center;
+  font-weight: 900;
+  color: #444
+}
+
+.nav-right {
+  float: right;
+}
+
+.nav-right a {
+  margin-right: 0;
+  margin-left: 48px;
+}
