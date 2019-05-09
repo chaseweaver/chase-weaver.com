@@ -1,0 +1,23 @@
+:root {
+	--primary: #6200ee;
+	--primaryVar: #3700b3;
+	--secondary: #03dac6;
+	--secondaryVar: #018786;
+	--background: #121212;
+	--backgroundVar: #222222;
+	--text: #fff;
+	--textInv: #040404;
+	--error: #b00020;
+}
+
+::selection {
+	background: var(--secondaryVar);
+}
+
+::-moz-selection {
+	background: var(--secondaryVar);
+}
+
+* {
+	transition: background-color 0.5s, border-color 0.5s, width 0.5s, height 0.5s;
+}

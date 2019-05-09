@@ -1,50 +1,124 @@
 /* eslint-disable no-unused-vars, no-undef */
 
-
 // Inject navigation panel into page
 $(document).ready(function() {
-  $('#navigation').load('pages/nav.html');
-  $('#nav-style').load('css/nav.css');
+	$('#nav-style').load('css/nav.css');
+	$('#nav-page').load('pages/nav.html');
 
-  // Initial, remove before finalizing
-  $('#content').load('pages/contact.html');
-  $('#content-style').append('css/contact.css');
+	// Initial, remove before finalizing
+	$('#pg-style').load('css/home.css');
+	$('#pg-page').load('pages/home.html');
 });
 
-// Remove loading fade
+// Set initial site theme
 $(document).ready(function() {
-  const fadein = document.getElementById('fade-in');
-  fadein.style.background = '#0000';
-  setTimeout(function() { fadein.style.setProperty('display', 'none'); }, 1000);
+	switchTheme('black');
+	switchTheme('red');
 });
 
-// Sets random color injected into css
-$(document).ready(function() {
-  document.documentElement.style.setProperty('--accent-color', getRandomColor());
-});
+let themeAccent = 0;
+function cycleThemeAccent() {
+	const arr = ['indigo', 'purple', 'red'];
 
-/* Generates a random color for accent */
-function getRandomColor() {
-  const letters = 'ABCDEF'.split('');
-  let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * letters.length)];
-  }
-  return color;
+	if (++themeAccent >= arr.length) themeAccent = 0;
+	switchTheme(arr[themeAccent]);
 }
 
-/*
-$('#code').click(function(){
-  $.ajax({url: 'pages/code.html', success: function(result) {
-    $('#content').html(result);
-    $('#content-style').append('css/code.css');
-  }});
-});
+let themeBase = 0;
+function cycleThemeBase() {
+	const arr = ['black', 'dark', 'light'];
 
-$('#projects').click(function(){
-  $.ajax({url: 'pages/projects.html', success: function(result) {
-    $('#content').html(result);
-    $('#content-style').append('css/projects.css');
-  }});
-});
-*/
+	if (++themeBase >= arr.length) themeBase = 0;
+	switchTheme(arr[themeBase]);
+}
+
+function switchTheme(theme) {
+	let primary,
+		primaryVar,
+		secondary,
+		secondaryVar,
+		background,
+		backgroundVar,
+		text,
+		textInv,
+		error;
+
+	switch (theme) {
+		case 'black':
+			background = '#000000';
+			backgroundVar = '#080808';
+			text = '#ffffff';
+			textInv = '#040404';
+			break;
+
+		case 'dark':
+			background = '#121212';
+			backgroundVar = '#222222';
+			text = '#ffffff';
+			textInv = '#040404';
+			break;
+
+		case 'light':
+			background = '#fefefe';
+			backgroundVar = '#efefef';
+			text = '#040404';
+			textInv = '#ffffff';
+			break;
+
+		case 'indigo':
+			primary = '#3f51b5';
+			primaryVar = '#002984';
+			secondary = '#ff4081';
+			secondaryVar = '#c60055';
+			error = '#b00020';
+			break;
+
+		case 'purple':
+			primary = '#6200ee';
+			primaryVar = '#3700b3';
+			secondary = '#03dac6';
+			secondaryVar = '#018786';
+			error = '#b00020';
+			break;
+
+		case 'red':
+			primary = '#6200ee';
+			primaryVar = '#3700b3';
+			secondary = '#03dac6';
+			secondaryVar = '#018786';
+			error = '#b00020';
+			break;
+
+		default:
+			return;
+	}
+
+	if (primary != null)
+		document.documentElement.style.setProperty('--primary', primary);
+
+	if (primaryVar != null)
+		document.documentElement.style.setProperty('--primaryVar', primaryVar);
+
+	if (secondary != null)
+		document.documentElement.style.setProperty('--secondary', secondary);
+
+	if (secondaryVar != null)
+		document.documentElement.style.setProperty('--secondaryVar', secondaryVar);
+
+	if (background != null)
+		document.documentElement.style.setProperty('--background', background);
+
+	if (backgroundVar != null)
+		document.documentElement.style.setProperty(
+			'--backgroundVar',
+			backgroundVar
+		);
+
+	if (text != null) document.documentElement.style.setProperty('--text', text);
+
+	if (textInv != null)
+		document.documentElement.style.setProperty('--textInv', textInv);
+
+	if (error != null)
+		document.documentElement.style.setProperty('--error', error);
+}

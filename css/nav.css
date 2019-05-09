@@ -1,40 +1,60 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
-:root {
-  --accent-color: #fff;
-}
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:600');
 
 .nav {
-  transition: all .5s;
-  width: 100%;
-  overflow: hidden;
-  display: inline-block;
-  font-family: 'Lato', sans-serif;
-  padding: 2% 0;
-  background-color: #fefefe
+	width: 100%;
+	height: 7%;
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	flex-direction: column;
+	font-family: 'Source Code Pro', monospace;
+	background-color: var(--backgroundVar);
 }
 
-.nav>.logo {
-  background-color: #444;
-  height: 32px;
+.nav:hover {
+	height: 18%;
 }
 
-.nav a {
-  font-size: 10pt;
-  text-decoration: none;
-  float: left;
-  letter-spacing: 1px;
-  padding-left: 0;
-  text-align: center;
-  font-weight: 900;
-  color: #444
+.toggle-cont {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-size: 22pt;
+	line-height: 2;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
-.nav-right {
-  float: right;
+.nav-a {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	font-size: 32pt;
+	line-height: 200%;
 }
 
-.nav-right a {
-  margin-right: 0;
-  margin-left: 48px;
+.nav-a a:hover {
+	color: var(--secondary);
+}
+
+.dot {
+	height: 16pt;
+	width: 16pt;
+	margin-top: 1.65%;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+.background {
+	background-color: var(--background);
+	border: 4px solid var(--text);
+}
+
+.secondary {
+	background-color: var(--secondary);
+	border: 4px solid var(--secondaryVar);
 }
