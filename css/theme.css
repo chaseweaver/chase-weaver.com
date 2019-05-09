@@ -21,3 +21,12 @@
 * {
 	transition: background-color 0.5s, border-color 0.5s, width 0.5s, height 0.5s;
 }
+
+a,
+h1,
+h2,
+h3,
+p,
+.toggle-cont {
+	transition: color 0.5s;
+}
