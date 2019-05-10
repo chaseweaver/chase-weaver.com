@@ -1,21 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-.home-cont {
-	width: 80%;
-	padding: 0 10%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-}
-
 .header {
 	width: 100%;
 	font-size: 48pt;
 	font-family: 'Open Sans', sans-serif;
 }
 
-.body {
+.body-cont {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	font-family: 'Open Sans', sans-serif;
 }

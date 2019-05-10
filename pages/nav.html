@@ -1,12 +1,21 @@
-<div class="nav">
-	<div class="toggle-cont">...</div>
-	<div class="nav-a">
-		<a>home</a>
-		<a>résumé</a>
-		<a>projects</a>
-		<a>code</a>
-		<a>contact</a>
-		<span class="dot background" onclick="cycleThemeBase()"></span>
-		<span class="dot secondary" onclick="cycleThemeAccent()"></span>
-	</div>
+<div
+	class="nav"
+	id="nav-bar"
+	onmouseover="toggleNav('content-container', 'nav-bar', true)"
+	onmouseout="toggleNav('content-container', 'nav-bar', false)"
+>
+	<div id="toggle" class="toggle-cont">...</div>
+	<span class="visible" id="visible">
+		<div class="nav-a">
+			<a onclick="loadPage('home')">home</a>
+			<a onclick="loadPage('resume')">résumé</a>
+			<a onclick="loadPage('projects')">projects</a>
+			<a onclick="loadPage('photos')">photos</a>
+			<a onclick="loadPage('contact.html')">contact</a>
+		</div>
+		<div class="bar">
+			<div class="block background" onclick="cycleThemeBase()"></div>
+			<div class="block secondary" onclick="cycleThemeAccent()"></div>
+		</div>
+	</span>
 </div>
