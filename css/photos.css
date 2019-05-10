@@ -29,7 +29,19 @@
 	height: auto !important;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 1024px) {
+	.header {
+		font-size: 34pt;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.header {
+		font-size: 28pt;
+	}
+}
+
+@media screen and (max-width: 800px) {
 	#photos {
 		-moz-column-count: 2;
 		-webkit-column-count: 2;
@@ -37,7 +49,7 @@
 	}
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
 	#photos {
 		-moz-column-count: 1;
 		-webkit-column-count: 1;

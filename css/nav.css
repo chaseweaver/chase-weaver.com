@@ -24,13 +24,10 @@
 	user-select: none;
 }
 
-@media (max-width: 800px) {
-	.toggle-cont {
-		font-size: 36pt;
-	}
-
+@media screen and (max-width: 1024px) {
 	.nav-a {
-		font-size: 52pt;
+		flex-direction: column !important;
+		text-align: center;
 	}
 }
 
