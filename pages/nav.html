@@ -7,11 +7,26 @@
 	<div id="toggle" class="toggle-cont">...</div>
 	<span class="visible" id="visible">
 		<div class="nav-a">
-			<a onclick="loadPage('home')">home</a>
-			<a onclick="loadPage('resume')">résumé</a>
-			<a onclick="loadPage('projects')">projects</a>
-			<a onclick="loadPage('photos')">photos</a>
-			<a onclick="loadPage('contact.html')">contact</a>
+			<a
+				onclick="loadPage('home'); toggleNav('content-container', 'nav-bar', false)"
+				>home</a
+			>
+			<a
+				onclick="loadPage('resume'); toggleNav('content-container', 'nav-bar', false)"
+				>résumé</a
+			>
+			<a
+				onclick="loadPage('projects'); toggleNav('content-container', 'nav-bar', false)"
+				>projects</a
+			>
+			<a
+				onclick="loadPage('photos'); toggleNav('content-container', 'nav-bar', false)"
+				>photos</a
+			>
+			<a
+				onclick="loadPage('contact.html'); toggleNav('content-container', 'nav-bar', false)"
+				>contact</a
+			>
 		</div>
 		<div class="bar">
 			<div class="block background" onclick="cycleThemeBase()"></div>

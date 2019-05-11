@@ -34,7 +34,7 @@ function toggleNav(id, bid, t) {
 	let ele = document.getElementById(id);
 	let bar = document.getElementById(bid).clientHeight;
 	let vis = document.getElementById('visible');
-	let offset = -bar + $(window).height() * 0.08;
+	let offset = -bar + $(window).height() * 0.06;
 
 	if (t) {
 		ele.style.marginTop = `${offset}px`;
