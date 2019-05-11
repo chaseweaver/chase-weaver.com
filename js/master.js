@@ -25,9 +25,17 @@ $(window).on('load', function() {
 });
 
 function loadPage(pg) {
-	$('#pg-style').load(`css/${pg}.css`);
-	$('#pg-page').load(`pages/${pg}.html`);
-	setCookie('page', pg, 14);
+	document.getElementById('content-container').style.opacity = '0';
+	sleep(500).then(() => {
+		$('#pg-style').load(`css/${pg}.css`);
+		$('#pg-page').load(`pages/${pg}.html`);
+		setCookie('page', pg, 14);
+		document.getElementById('content-container').style.opacity = '1';
+	});
+}
+
+function sleep(time) {
+	return new Promise(resolve => setTimeout(resolve, time));
 }
 
 function toggleNav(id, bid, t) {
