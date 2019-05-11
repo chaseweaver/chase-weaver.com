@@ -8,8 +8,8 @@
 body,
 html {
 	margin: auto;
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	overflow: hidden;
 	background-color: var(--background);
 	color: var(--text);
@@ -19,7 +19,7 @@ html {
 	transition: margin 0.5s;
 	width: 80%;
 	padding: 0 10%;
-	height: 92vh;
+	height: 92%;
 	display: flex;
 	flex-direction: column;
 	margin-top: 0px;
