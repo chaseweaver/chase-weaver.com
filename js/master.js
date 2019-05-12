@@ -26,7 +26,7 @@ $(window).on('load', function() {
 
 function loadPage(pg) {
 	document.getElementById('content-container').style.opacity = '0';
-	sleep(500).then(() => {
+	sleep(625).then(() => {
 		$('#pg-style').load(`css/${pg}.css`);
 		$('#pg-page').load(`pages/${pg}.html`);
 		setCookie('page', pg, 14);
