@@ -6,9 +6,11 @@ $(document).ready(function() {
 	$('#nav-page').load('pages/nav.html');
 
 	if (!getCookie('page')) {
-		setCookie('page', 'home', 14);
-		$('#pg-style').load('css/home.css');
-		$('#pg-page').load('pages/home.html');
+		$('#pg-style').load('css/home.css', function() {
+			$('#pg-page').load('pages/home.html', function() {
+				setCookie('page', 'home', 14);
+			});
+		});
 	}
 });
 
@@ -19,18 +21,21 @@ $(document).ready(function() {
 
 $(window).on('load', function() {
 	if ((pg = getCookie('page'))) {
-		$('#pg-style').load(`css/${pg}.css`);
-		$('#pg-page').load(`pages/${pg}.html`);
+		$('#pg-style').load(`css/${pg}.css`, function() {
+			$('#pg-page').load(`pages/${pg}.html`);
+		});
 	}
 });
 
 function loadPage(pg) {
 	document.getElementById('content-container').style.opacity = '0';
-	sleep(625).then(() => {
-		$('#pg-style').load(`css/${pg}.css`);
-		$('#pg-page').load(`pages/${pg}.html`);
-		setCookie('page', pg, 14);
-		document.getElementById('content-container').style.opacity = '1';
+	sleep(500).then(() => {
+		$('#pg-style').load(`css/${pg}.css`, function() {
+			$('#pg-page').load(`pages/${pg}.html`, function() {
+				setCookie('page', pg, 14);
+				document.getElementById('content-container').style.opacity = '1';
+			});
+		});
 	});
 }
 
