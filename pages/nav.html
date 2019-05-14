@@ -1,32 +1,13 @@
-<div
-	class="nav"
-	id="nav-bar"
-	onmouseover="toggleNav('content-container', 'nav-bar', true)"
-	onmouseout="toggleNav('content-container', 'nav-bar', false)"
->
+<link rel="stylesheet" href="./css/nav.css" />
+<div class="nav" id="nav-bar" onmouseover="openNav()" onmouseout="closeNav()">
 	<div id="toggle" class="toggle-cont">...</div>
 	<span class="visible" id="visible">
-		<div class="nav-a">
-			<a
-				onclick="loadPage('home'); toggleNav('content-container', 'nav-bar', false)"
-				>home</a
-			>
-			<a
-				onclick="loadPage('resume'); toggleNav('content-container', 'nav-bar', false)"
-				>résumé</a
-			>
-			<a
-				onclick="loadPage('projects'); toggleNav('content-container', 'nav-bar', false)"
-				>projects</a
-			>
-			<a
-				onclick="loadPage('photos'); toggleNav('content-container', 'nav-bar', false)"
-				>photos</a
-			>
-			<a
-				onclick="loadPage('contact.html'); toggleNav('content-container', 'nav-bar', false)"
-				>contact</a
-			>
+		<div class="nav-a" id="nav-a">
+			<a href="/pages/home.html" title="Home">home</a>
+			<a href="/pages/resume.html" title="Résumé">résumé</a>
+			<a href="/pages/projects.html" title="Projects"">projects</a>
+			<a href="/pages/photos.html" title="Photos">photos</a>
+			<a href="/pages/contact.html" title="Contact">contact</a>
 		</div>
 		<div class="bar">
 			<div class="block background" onclick="cycleThemeBase()"></div>

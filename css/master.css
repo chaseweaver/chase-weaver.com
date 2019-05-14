@@ -16,7 +16,7 @@ html {
 }
 
 .content-container {
-	transition: margin 0.5s, opacity 0.4s;
+	transition: margin 0.5s, opacity 0.5s;
 	width: 80%;
 	padding: 0 10%;
 	height: 94%;

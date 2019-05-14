@@ -6,6 +6,7 @@
 	flex-direction: column;
 	font-family: 'Anton', sans-serif;
 	background-color: var(--backgroundVar);
+	margin: 0px;
 }
 
 .toggle-cont {
