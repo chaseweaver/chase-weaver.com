@@ -2,7 +2,12 @@
 
 .nav {
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	font-family: 'Anton', sans-serif;
 	background-color: var(--backgroundVar);
@@ -11,8 +16,12 @@
 
 .toggle-cont {
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	text-align: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	font-size: 4vh;
 	line-height: 4.5vh;
@@ -28,23 +37,48 @@
 
 @media screen and (max-width: 1024px) {
 	.nav-a {
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: normal !important;
+		-ms-flex-direction: column !important;
 		flex-direction: column !important;
 		text-align: center;
 	}
 }
 
 .nav-a {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 1.5% 10%;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-pack: space-evenly;
+	-ms-flex-pack: space-evenly;
 	justify-content: space-evenly;
 	font-size: 40pt;
 }
 
 .nav-a a {
+	-webkit-transition: color 0.5s;
 	transition: color 0.5s;
 	padding: 0 1%;
+	text-decoration: none;
+}
+
+.nav-a a:link {
+	color: var(--text);
+}
+
+.nav-a a:visited {
+	color: var(--text);
+}
+
+.nav-a a:active {
+	color: var(--secondary);
 }
 
 .nav-a a:hover {
@@ -53,8 +87,15 @@
 
 .bar {
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	padding: 1.5% 0;
 }

@@ -1,1 +1,3 @@
-AddType application/x-httpd-php .html .htm
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . / [L,R=301]

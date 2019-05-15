@@ -19,6 +19,8 @@
 }
 
 * {
+	-webkit-transition: background-color 0.5s, border-color 0.5s, width 0.5s,
+		height 0.5s, max-height 0.5s;
 	transition: background-color 0.5s, border-color 0.5s, width 0.5s, height 0.5s,
 		max-height 0.5s;
 }
@@ -29,5 +31,6 @@ h2,
 h3,
 p,
 .toggle-cont {
+	-webkit-transition: color 0.5s;
 	transition: color 0.5s;
 }

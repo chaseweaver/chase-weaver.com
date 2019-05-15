@@ -21,6 +21,7 @@
 	-moz-column-count: 3;
 	-moz-column-gap: 0px;
 	column-count: 3;
+	-webkit-column-gap: 0;
 	column-gap: 0;
 }
 
@@ -43,7 +44,6 @@
 
 @media screen and (max-width: 800px) {
 	#photos {
-		-moz-column-count: 1;
 		-webkit-column-count: 1;
 		column-count: 1;
 	}

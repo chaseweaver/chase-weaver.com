@@ -16,11 +16,17 @@ html {
 }
 
 .content-container {
+	-webkit-transition: margin 0.5s, opacity 0.5s;
 	transition: margin 0.5s, opacity 0.5s;
 	width: 80%;
 	padding: 0 10%;
 	height: 94%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	margin-top: 0px;
 	overflow-y: auto;

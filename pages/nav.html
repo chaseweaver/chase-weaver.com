@@ -1,13 +1,12 @@
-<link rel="stylesheet" href="./css/nav.css" />
 <div class="nav" id="nav-bar" onmouseover="openNav()" onmouseout="closeNav()">
 	<div id="toggle" class="toggle-cont">...</div>
 	<span class="visible" id="visible">
 		<div class="nav-a" id="nav-a">
-			<a href="/pages/home.html" title="Home">home</a>
-			<a href="/pages/resume.html" title="Résumé">résumé</a>
-			<a href="/pages/projects.html" title="Projects"">projects</a>
-			<a href="/pages/photos.html" title="Photos">photos</a>
-			<a href="/pages/contact.html" title="Contact">contact</a>
+			<a title="Home" onclick="loadPage('home')">home</a>
+			<a title="Résumé" onclick="loadPage('resume')">résumé</a>
+			<a title="Projects" onclick="loadPage('projects')">projects</a>
+			<a title="Photos" onclick="loadPage('photos')">photos</a>
+			<a title="Contact" onclick="loadPage('contact')">contact</a>
 		</div>
 		<div class="bar">
 			<div class="block background" onclick="cycleThemeBase()"></div>
